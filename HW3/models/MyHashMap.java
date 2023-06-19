@@ -74,6 +74,12 @@ public class MyHashMap<K, V> implements Map<K,V>, Iterable<V> {
         @Override
         public int hashCode() {
 
+            if(this.key == null) {
+
+                return -1;
+
+            }
+
             return key.hashCode() ^ 13 + key.hashCode();
 
         }
@@ -110,7 +116,7 @@ public class MyHashMap<K, V> implements Map<K,V>, Iterable<V> {
     @Override
     public boolean isEmpty() {
 
-        return this.table == null;
+        return this.size == 0;
 
     }
 

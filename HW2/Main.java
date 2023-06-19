@@ -8,17 +8,17 @@ public class Main {
     SingleLinkList<Contact> contactList = new SingleLinkList<>();
 
     contactList.addToEnd(new Contact(121, "Иванов Иван Иванович", "+7987654321"));
-    contactList.addToEnd(new Contact(122, "Иванов Сергей Иванович", "+7987654322"));
-    contactList.addToEnd(new Contact(123, "Иванов Андрей Иванович", "+7987654323"));
-    contactList.addToEnd(new Contact(124, "Иванов Тимофей Иванович", "+7987654324"));
-    contactList.addToEnd(new Contact(125, "Иванов Александр Иванович", "+7987654325"));
+    contactList.addToEnd(new Contact(122, "Серебров Олег Иванович", "+7987654322"));
+    contactList.addToEnd(new Contact(123, "Шайтанов Шапка Иванович", "+7987654323"));
+    contactList.addToEnd(new Contact(124, "Анна Анновна Иванович", "+7987654324"));
+    contactList.addToEnd(new Contact(125, "Сергеев Сергей Иванович", "+7987654325"));
 
     for (Object contact : contactList) {
       System.out.println(contact);
     }
     contactList.reverse();
 
-    System.out.println("-------------------------------------");
+    System.out.println("======================================");
 
     for (Object contact : contactList) {
       System.out.println(contact);
@@ -47,12 +47,6 @@ public class Main {
     }
   }
 
-
-  /**
-   * Класс списка
-   *
-   * @param <T>
-   */
   public static class SingleLinkList<T> implements Iterable {
 
     ListItem<T> head;
@@ -77,11 +71,6 @@ public class Main {
       };
     }
 
-    /**
-     * Класс отдельного элемента
-     *
-     * @param <T>
-     */
     private static class ListItem<T> {
 
       T data;
