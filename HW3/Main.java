@@ -25,6 +25,9 @@ public class Main {
         System.out.println(myMap.remove(0));
         System.out.println(myMap.containsKey(0));
         System.out.println(myMap.size());
+        System.out.println(myMap.replace(1, 100));
+        System.out.println(myMap.get(1));
+        System.out.println(myMap.values());
 
     }
     
